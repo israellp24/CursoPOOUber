@@ -10,9 +10,5 @@ class UberPool extends Car{
         $this->model = $model;
     }
 
-    public function printDataCar() {
-        echo "Licencia: $this->license Driver: ".$this->driver->name;
-    }
-
 }
 ?>

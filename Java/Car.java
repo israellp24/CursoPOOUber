@@ -1,8 +1,8 @@
 public class Car {
-    Integer id;
-    String license;
-    Account driver;
-    private Integer passenger;
+    private Integer id;
+    private String license;
+    private Account driver;
+    protected Integer passenger;
 
     public Car(String license, Account driver){
         this.license = license;
@@ -23,7 +23,33 @@ public class Car {
         if(passenger==4){
             this.passenger=passenger;
         }else{
-            System.out.println("No puedes ingresar un valor menor a 4");
+            System.out.println("Necesitas asignar 4 pasajeros");
         }
     }
+
+    public Integer getId() {
+        return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
+    }
+
+    public String getLicense() {
+        return license;
+    }
+
+    public void setLicense(String license) {
+        this.license = license;
+    }
+
+    public Account getDriver() {
+        return driver;
+    }
+
+    public void setDriver(Account driver) {
+        this.driver = driver;
+    }
+
+    
 }

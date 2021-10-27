@@ -11,9 +11,5 @@ class UberBlack extends Car{
         $this->seatsMaterial = $seatsMaterial;
     }
 
-    public function printDataCar() {
-        echo "Licencia: $this->license Driver: ".$this->driver->name;
-    }
-
 }
 ?>
